@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/ToDo-task/static/css/main.74aadf31.css",
+    "main.js": "/ToDo-task/static/js/main.19f3e5c5.js",
+    "static/js/453.63f6b601.chunk.js": "/ToDo-task/static/js/453.63f6b601.chunk.js",
+    "static/media/fa-solid-900.ttf": "/ToDo-task/static/media/fa-solid-900.bacd5de623fb563b961a.ttf",
+    "static/media/fa-brands-400.ttf": "/ToDo-task/static/media/fa-brands-400.60127e352b7a11f7f1bc.ttf",
+    "static/media/fa-solid-900.woff2": "/ToDo-task/static/media/fa-solid-900.4d986b00ff9ca3828fbd.woff2",
+    "static/media/fa-brands-400.woff2": "/ToDo-task/static/media/fa-brands-400.455ea818179b4def0c43.woff2",
+    "static/media/fa-regular-400.ttf": "/ToDo-task/static/media/fa-regular-400.eb91f7b948a42799f678.ttf",
+    "static/media/fa-regular-400.woff2": "/ToDo-task/static/media/fa-regular-400.21cb8f55d8e0c5b89751.woff2",
+    "static/media/fa-v4compatibility.ttf": "/ToDo-task/static/media/fa-v4compatibility.c8e090db312b0bea2aa2.ttf",
+    "static/media/fa-v4compatibility.woff2": "/ToDo-task/static/media/fa-v4compatibility.cf7f5903d06b79ad60f1.woff2",
+    "index.html": "/ToDo-task/index.html",
+    "main.74aadf31.css.map": "/ToDo-task/static/css/main.74aadf31.css.map",
+    "main.19f3e5c5.js.map": "/ToDo-task/static/js/main.19f3e5c5.js.map",
+    "453.63f6b601.chunk.js.map": "/ToDo-task/static/js/453.63f6b601.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.74aadf31.css",
+    "static/js/main.19f3e5c5.js"
+  ]
+}
