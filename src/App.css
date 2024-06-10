@@ -1,15 +1,14 @@
-.screen{
+.screen {
   height: 100vh;
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
   position: relative;
 }
-.home-form{
+.home-form {
   width: 50%;
-
 }
-.search-section{
+.search-section {
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
@@ -23,15 +22,14 @@
   border-radius: 8px;
   font-size: 14px;
 }
-.form-check{
+.form-check {
   margin-left: 10px;
   margin-right: 10px;
-
 }
 .search-section span {
   font-weight: 500;
 }
-.input-search{
+.input-search {
   border: 1px solid rgb(167, 164, 164);
   padding: 2.5px;
   padding-left: 10px;
@@ -39,29 +37,27 @@
   width: 50%;
   border-radius: 5px;
 }
-.one-task{
+.one-task {
   width: 80% !important;
 }
-ul{
+ul {
   margin-bottom: 20px;
   padding: 0px !important;
 }
-li{
+li {
   box-shadow: 0px 0px 2px rgb(157, 157, 157);
   border-radius: 8px;
 }
 
-.one-task p{
+.one-task p {
   font-size: 400;
   margin: 0px;
   padding: 0px;
 }
 
-
-
 /* form to add task */
 
-.form-container{
+.form-container {
   position: absolute;
   background-color: rgba(19, 19, 19, 0.8);
   height: 100vh;
@@ -73,117 +69,115 @@ li{
   justify-content: center;
   z-index: 999;
 }
-.add-task-form{
-    width: 30%;
-    background-color: white;
-    padding: 50px;
-    border-radius: 10px;
-    position: relative;
+.add-task-form {
+  width: 30%;
+  background-color: white;
+  padding: 50px;
+  border-radius: 10px;
+  position: relative;
 }
-.add-task-form button{
+.add-task-form button {
   background-color: green;
   width: 28%;
   padding: 3px 10px;
   border-radius: 10px;
   float: right !important;
 }
-.add-task-form input{
+.add-task-form input {
   padding: 3px 10px;
   border-radius: 10px;
 }
-.task-title{
+.task-title {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.task-title i{
+.task-title i {
   position: absolute;
   cursor: pointer;
   top: 30px;
 }
-.tranlate{
+.tranlate {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-  /* Extra small devices (portrait phones, less than 576px) */
-  @media (min-width: 100px) and (max-width: 575.98px) {
-    .home-form{
-      width: 90%;
-      display: block;
-    }
-    .home-form input{
-      width: 90%;
-      display: block;
-      margin: auto;
-      margin-bottom: 25px;
-    }
-    .home-form button{
-      width: 30%;
-      display: block;
-      margin: auto;
-    }
-    .search-section{
-      display: block !important;
-    }
-    .tranlate{
-      margin-top: 0px;
-    }
-    .form-check{
-      margin-top: 20px;
-    }
-    .add-task-form{
-      width: 85%;
+/* Extra small devices (portrait phones, less than 576px) */
+@media (min-width: 100px) and (max-width: 575.98px) {
+  .home-form {
+    width: 90%;
+    display: block;
   }
-  .add-task-form button{
+  .home-form input {
+    width: 90%;
+    display: block;
+    margin: auto;
+    margin-bottom: 25px;
+  }
+  .home-form button {
+    width: 30%;
+    display: block;
+    margin: auto;
+  }
+  .search-section {
+    display: block !important;
+  }
+  .tranlate {
+    margin-top: 0px;
+  }
+  .form-check {
+    margin-top: 20px;
+  }
+  .add-task-form {
+    width: 85%;
+  }
+  .add-task-form button {
     width: 48%;
   }
-  }
-  
-  /* // Small devices (landscape phones, 576px and up) */
-  @media (min-width: 576px) and (max-width: 767.98px) { 
-    .home-form{
-      width: 90%;
-      display: block;
-    }
-    .home-form input{
-      width: 90%;
-      display: block;
-      margin: auto;
-      margin-bottom: 25px;
-    }
-    .home-form button{
-      width: 30%;
-      display: block;
-      margin: auto;
-    }
-    .search-section{
-      display: block !important;
-    }
-    .tranlate{
-      margin-top: 0px;
-    }
-    .form-check{
-      margin-top: 20px;
-    }
-    .add-task-form{
-      width: 85%;
-  }
-  .add-task-form button{
-    width: 48%;
-  }
-   }
+}
 
-  
-  /* // Medium devices (tablets, 768px and up) */
-  @media (min-width: 768px) and (max-width: 991.98px) {
-  
-   }
-  
-  /* // Large devices (desktops, 992px and up) */
-  @media (min-width: 992px) and (max-width: 1199.98px) {
-   }
-  
-  /* // Extra large devices (large desktops, 1200px and up) */
-  @media (min-width: 1200px) {
-    }
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .home-form {
+    width: 90%;
+    display: block;
+  }
+  .home-form input {
+    width: 90%;
+    display: block;
+    margin: auto;
+    margin-bottom: 25px;
+  }
+  .home-form button {
+    width: 30%;
+    display: block;
+    margin: auto;
+  }
+  .search-section {
+    display: block !important;
+  }
+  .tranlate {
+    margin-top: 0px;
+  }
+  .form-check {
+    margin-top: 20px;
+  }
+  .add-task-form {
+    width: 85%;
+  }
+  .add-task-form button {
+    width: 48%;
+  }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}

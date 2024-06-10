@@ -7,10 +7,10 @@ const App = () => {
   const [tasks, setTasks] = useState([]);
   const [language, setLanguage] = useState("en");
   const [searchTerm, setSearchTerm] = useState("");
-  const [showForm , setShowForm] = useState(false);
+  const [showForm, setShowForm] = useState(false);
 
   useEffect((e) => {
-    const savedTasks = JSON.parse(localStorage.getItem("tasks"))||[];
+    const savedTasks = JSON.parse(localStorage.getItem("tasks")) || [];
     setTasks(savedTasks);
   }, []);
 
@@ -27,7 +27,6 @@ const App = () => {
     const newTasks = tasks.filter((_, i) => i !== index);
     setTasks(newTasks);
   };
-
 
   const toggleTask = (index) => {
     const newTasks = tasks.map((task, i) => {
@@ -49,54 +48,61 @@ const App = () => {
 
   return (
     <>
-      
-    <div className={` ${language === "ar" ? "rtl" : "ltr"} screen`}>
-      <div className="home-form">
-        <div className="search-section">
-          <Search
-            searchTerm={searchTerm}
-            setSearchTerm={setSearchTerm}
+      <div className={` ${language === "ar" ? "rtl" : "ltr"} screen`}>
+        <div className="home-form">
+          <div className="search-section">
+            <Search
+              searchTerm={searchTerm}
+              setSearchTerm={setSearchTerm}
+              language={language}
+            />
+            <button
+              className=" text-center"
+              onClick={() => {
+                setShowForm(true);
+              }}
+            >
+              {language === "en" ? "+ Add Task" : "أضف مهمة + "}
+            </button>
+            <div className="tranlate">
+              <span>EN</span>
+              <div class="form-check form-switch">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  role="switch"
+                  id="flexSwitchCheckDefault"
+                  onClick={toggleLanguage}
+                />
+              </div>
+              <span>AR</span>
+            </div>
+          </div>
+          <TaskList
+            tasks={filteredTasks}
+            deleteTask={deleteTask}
+            toggleTask={toggleTask}
             language={language}
           />
-          <button className=" text-center" onClick={()=>{setShowForm(true)}}>
-            {language === "en" ? "+ Add Task" : "أضف مهمة + "}
-            
-          </button>
-<div className="tranlate">
-<span>EN</span>
-          <div class="form-check form-switch">
-            <input
-              class="form-check-input"
-              type="checkbox"
-              role="switch"
-              id="flexSwitchCheckDefault"
-              onClick={toggleLanguage}
+          {showForm && (
+            <TaskForm
+              addTask={addTask}
+              language={language}
+              showform={setShowForm}
             />
-          </div>
-          <span>AR</span>
-</div>
+          )}
         </div>
-        <TaskList
-          tasks={filteredTasks}
-          deleteTask={deleteTask}
-          toggleTask={toggleTask}
-          language={language}
-        />
-        {showForm && <TaskForm addTask={addTask} language={language} showform={setShowForm}/>}
       </div>
-    </div>
     </>
   );
 };
-
 export default App;
-
 
 const Search = ({ searchTerm, setSearchTerm, language }) => {
   return (
     <input
-      type="text" 
-      placeholder={language === 'en' ? 'Search Tasks' : 'ابحث في المهام'}
+      type="text"
+      placeholder={language === "en" ? "Search Tasks" : "ابحث في المهام"}
       value={searchTerm}
       onChange={(e) => setSearchTerm(e.target.value)}
       className="input-search"
