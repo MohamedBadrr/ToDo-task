@@ -7,7 +7,7 @@ const App = () => {
   const [tasks, setTasks] = useState([]);
   const [language, setLanguage] = useState("en");
   const [searchTerm, setSearchTerm] = useState("");
-  const [showForm , setShowForm] = useState(true);
+  const [showForm , setShowForm] = useState(false);
 
   useEffect((e) => {
     const savedTasks = JSON.parse(localStorage.getItem("tasks"))||[];
@@ -62,7 +62,8 @@ const App = () => {
             {language === "en" ? "+ Add Task" : "أضف مهمة + "}
             
           </button>
-          <span>EN</span>
+<div className="tranlate">
+<span>EN</span>
           <div class="form-check form-switch">
             <input
               class="form-check-input"
@@ -73,6 +74,7 @@ const App = () => {
             />
           </div>
           <span>AR</span>
+</div>
         </div>
         <TaskList
           tasks={filteredTasks}
