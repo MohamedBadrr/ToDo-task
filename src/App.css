@@ -134,6 +134,9 @@ li {
   .add-task-form button {
     width: 48%;
   }
+  .completed{
+    margin-left: 20px !important;
+  }
 }
 
 /* // Small devices (landscape phones, 576px and up) */
@@ -167,6 +170,9 @@ li {
   }
   .add-task-form button {
     width: 48%;
+  }
+  .completed{
+    margin-left: 20px !important;
   }
 }
 

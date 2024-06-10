@@ -16,7 +16,7 @@ const TaskList = ({ tasks, deleteTask, toggleTask, language }) => {
           <div>
             <button
               onClick={() => toggleTask(index)}
-              className="text-success p-2 mr-2"
+              className="text-success p-2 mr-2 completed"
             >
               {task.completed
                 ? language === "en"
